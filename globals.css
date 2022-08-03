@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --bg: #f9d1d1;
+    --l-gray: #cccccc;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.d-block {
+    display: block;
+}
+
+.main-font {
+        font-family: 'Montserrat', sans-serif;
+}
+.d-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100vh;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.my-5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 120px;
+    text-decoration: none;
+    border: none;
+}
+
+.logo:hover {
+    cursor: pointer;
+    font-size: 140px;
+}
+
+.logo-small {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 80px;
+}
+
+
+.about {
+	background-color: var(--bg-);
+}
+
+.code {
+    background-color: #cccccc;
+    border-radius: 3px;
+}
+
+

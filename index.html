@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='globals.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+     <script defer src='main.js'></script>
+</head>
+<body>
+<header>
+<!--header-->
+    <div class="menu d-flex flex-column justify-content-center w-100 h-100">
+
+	<div class="d-flex flex-column justify-content-center align-items-center">
+<!--title-->
+		<a class="fw-light text-white logo" href="index.html">Flow</a><p class="fw-light text-white m-0">Fix overflow issues</p>
+<!--buttons-->
+    <div class="btn-group my-5">
+			<a href="#about" data-target="about" class="btn btn-outline-light"> About</a>
+      <a href="#get-started" data-target="get-started" class="btn btn-outline-light">Get started</a>
+			<a href="#documentation" data-target="documentation" class="btn btn-outline-light">Documentation</a>
+      <a href="#examples" data-target="documentation" class="btn btn-outline-light">Examples</a>
+		</div>
+			<h5 class="fw-light text-white m-0">— A CSS framework to quickly resolve overflow problems —</h5>
+		</a>
+	</div>
+</div>
+</div>
+<!--end header-->
+</header>
+<main>
+  <!--about start-->
+    <div class="about" id="about">
+        <h1 class="justify-content-center align-items-center d-flex p-2 logo-small" data-aos="fade-up" data-aos-duration="3000">Flow</h1>
+        <div class="container h-100">
+            <!-- Column -->
+            <div class="container__column">
+                <!-- Cover -->
+                <iframe src="https://giphy.com/embed/26BoDNQVltRhO8tW0" data-aos="fade-up" data-aos-duration="3000" width="250" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+                <!-- Content -->
+                <div class="container__content">
+                    <p class="main-font p-2" data-aos="fade-up" data-aos-duration="3000">Quick to install thanks to the various options.</p>
+                </div>
+             <!-- Column -->
+            </div>
+             <div class="container__column">
+                <!-- Cover -->
+                <iframe src="https://giphy.com/embed/8vCEqOltLHutTM28NG" data-aos="fade-up" data-aos-duration="3000" width="250" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <!-- Content -->
+                <div class="container__content">
+                    <p class="main-font p-2" data-aos="fade-up" data-aos-duration="3000">Easy to use with the help of the built-in classes.</p>
+                </div>
+             </div>     <!-- Column -->
+            <div class="container__column">
+                <!-- Cover -->
+                <iframe src="https://giphy.com/embed/8lNbsS9W8Dd1wTZDVU" data-aos="fade-up" data-aos-duration="3000" width="250" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <!-- Content -->
+                <div class="container__content">
+                    <p class="main-font p-2" data-aos="fade-up" data-aos-duration="3000">CSS and JavaScript solutions for targeting common overflow issues.</p>
+                </div>
+            </div>
+                     <!-- Column -->
+            <div class="container__column">
+                <!-- Cover -->
+                <iframe src="https://giphy.com/embed/7Eh28wlW0fzCVA4VjJ" data-aos="fade-up" data-aos-duration="3000" width="250" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <!-- Content -->
+                <div class="container__content">
+                    <p class="main-font p-2" data-aos="fade-up" data-aos-duration="3000">Make elements fit perfectly by adding some simple CSS classes.</p>
+                </div>
+        </div>
+    </div>
+    <!--about end-->
+    <!--get started start-->
+    <h1 class="logo-small justify-content-center align-items-center d-flex p-2">Get started</h1>
+    <div class="get-started" id="get-started">
+
+    </div>
+    <!--get started end-->
+    <!--documentation start-->
+    <div class="wrapper d-lg-flex flex-column" id="documentation">
+        <div><h1 class="logo-small justify-content-center align-items-center d-flex p-2">Documentation</h1></div>
+        <div class="documentation-container d-flex flex-row-reverse"></div>
+    <div class="row">
+      <div class="col-3">
+            <!--classes-->
+        <nav class="nav d-flex flex-column p-2">
+          <a class="nav-link m-2 p-2 main-font black all-classes classes" data-type="all" id="all-classes" href="#a-z">All classes</a>
+          <a class="nav-link active m-2 p-2 main-font black main-classes classes" data-type="main" aria-current="page" href="#">Main classes</a>
+          <a class="nav-link m-2 p-2 main-font black secondary-classes classes" data-type="secondary"  href="#">Secondary classes</a>
+        </nav>
+      </div>
+          <!--alphabet-->
+      <div class="col-9" id="letters" onclick="myFunction()">
+        <ul class="nav nav-pills letter-list m-0 p-0">
+          <li class="nav-item">
+            <a class="nav-link show-all" aria-current="page" id="show-all" href="#all">*</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="a">A</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="b">B</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="c">C</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="d">D</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="e">E</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="f">F</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="g">G</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="h">H</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="i">I</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="j">J</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="k">K</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="l">L</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="m">M</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="n">N</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="o">O</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="p">P</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="q">Q</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="r">R</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="s">S</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="t">T</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="u">U</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="v">V</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="w">W</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="x">X</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="y">Y</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="z">Z</a>
+          </li>
+      </ul>
+          <!--all classes-->
+      <div class="abc-all">
+      <ul class="abc main-fonts overflow-y">
+        <li data-id="i" data-secondary="">img<p>Sets display image to block</p></li>
+        <li data-id="m" data-secondary="">m-0<p>Sets all margins to zero</p></li>
+        <li data-id="m" data-secondary="">minmax<p>Makes grid-template-columns responsive</p></li>
+        <li data-id="m" data-secondary="">minwidth<p>Adds height: auto and a min-width: 10px to elements. </p></li>
+        <li data-id="o" data-main = "1">overflow-all<p>Sets overflow to scroll and text-overflow to scroll </p></li>
+        <li data-id="o" data-main = "1">overflow-height<p>Sets the height to 100%</p></li>
+        <li data-id="o" data-main = "1">overflow-hidden<p>Hides overflow</p></li>
+        <li data-id="o" data-main = "">overflow-scroll<p>Sets overflow to scroll</li>
+        <li data-id="o" data-main = "1">overflow-width<p>Sets width to 100%
+        <li data-id="o" data-main = "1">overflow-x<p>Sets the horizontal scrollbar</li>
+        <li data-id="o" data-main = "1">overflow-y<p>Sets the vertical scrollbar</li>
+        <li data-id="r" data-secondary = "1">responsive-container<p>Sets height to auto, width to 100% and defines a max-width.</li>
+        <li data-id="t" data-secondary = "1">text-wrap<p>Sets the word-wrap to wrap.</li>
+        <li data-id="w" data-secondary="">wrap<p>Sets flex-wrap to wrap.</li>
+      </ul>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!--examples start-->
+<h1 class="logo-small justify-content-center align-items-center d-flex" id="examples">Examples</h1>
+<div class="wrap-documentation">
+<div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
+  <!--fixed-width elements-->
+  <div class="container-examples d-flex flex-row pt-4">
+  <div class="fixed-width-element"><p class="main-font white p-2 m-2">Mrs. Dalloway said she would buy the flowers herself.
+    For Lucy had her work cut out for her. The doors would be taken off their hinges; Rumpelmayer's men were coming.
+     And then, thought Clarissa Dalloway, what a morning—fresh as if issued to children on a beach.</p></div>
+     <div class="fixed-width-element d-flex overflow-all"><p class="main-font white p-2 m-2">Mrs. Dalloway said she would buy the flowers herself.
+        For Lucy had her work cut out for her. The doors would be taken off their hinges; Rumpelmayer's men were coming.
+         And then, thought Clarissa Dalloway, what a morning—fresh as if issued to children on a beach.</p></div>
+</div>
+<div class="container-feature">
+  <h1 class="p-2 m-4">Fixed-width elements</h1>
+  <p class="main-font p-2 m-4">Use the class <code>overflow-all</code> on your HTML element to fix overflow for fixed width elements.</p>
+  <p class="main-font p-2 m-4">HTML:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>fixed-width-element</q>&gt;&lt;/div&gt;</code>
+  <p class="main-font p-2 m-4">add CSS class:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>fixed-width-element overflow-all</q>&gt;&lt;/div&gt;</code>
+</div>
+</div>
+</div>
+<div class="documentation-container d-flex p-2 m-4 flex-row-reverse justify-content-center align-items-center">
+  <!----flexbox without wrapping-->
+  <div class="container-examples d-flex-row pt-5">
+      <div class="wrap-example wrap-example-1 mt-2">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="wrap-example wrap-example-2 wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+<div class="container-feature w-50">
+  <h1 class="p-2 mb-4 ml-4 mr-4 mt-0">Flexbox without wrapping</h1>
+  <p class="main-font p-2 m-4">Use the class <code>wrap</code> on your HTML element to fix overflow for fixed width elements.</p>
+  <p class="main-font p-2 m-4">HTML:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>flex</q>&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+  </code>
+  <p class="main-font p-2 m-4">add CSS class:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>flex wrap</q>&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+  </code>
+</div>
+</div>
+<div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
+  <!--css grid-->
+  <div class="container-examples d-flex flex-row mt-4">
+    <div class="grid-container m-2 p-2">
+      <div class="grid1 b"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p><img class="responsive-container" src="https://images.unsplash.com/photo-1460039230329-eb070fc6c77c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"></div>
+      <div class="grid2 b"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p><img class="responsive-container" src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=404&q=80"></div>
+      <div class="grid3 b"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p><img class="responsive-container" src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80"></div>
+      <div class="grid4 b"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p><img class="responsive-container" src="https://images.unsplash.com/photo-1613539246066-78db6ec4ff0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80"></div>
+    </div>
+    <div class="grid-container m-2 p-2 minmax">
+      <div class="grid1 b minmax overflow-all"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p><img class="responsive-container" src="https://images.unsplash.com/photo-1460039230329-eb070fc6c77c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"></div>
+      <div class="grid2 b minmax overflow-all"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p><img class="responsive-container" src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=404&q=80"></div>
+      <div class="grid3 b minmax overflow-all"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p><img class="responsive-container" src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80"></div>
+      <div class="grid4 b  minmax overflow-all"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p><img class="responsive-container" src="https://images.unsplash.com/photo-1613539246066-78db6ec4ff0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80"></div>
+    </div>
+  </div>
+<div class="container-feature">
+  <h1 class="p-2 m-4">CSS grids</h1>
+  <p class="main-font p-2 m-4">Use the class <code>minmax</code> on your HTML element to fix overflow for fixed width elements.</p>
+  <p class="main-font p-2 m-4">It is good practice to use fr units with your grids. Read more about it <a href="https://www.digitalocean.com/community/tutorials/css-css-grid-layout-fr-unit" target="_blank">here.</a>
+  <p class="main-font p-2 m-4">HTML:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>grid1</q>&gt;&lt;/div&gt;</code>
+  <p class="main-font p-2 m-4">add CSS class:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>grid1 minmax overflow-all</q>&gt;&lt;/div&gt;</code>
+</div>
+</div>
+<div class="documentation-container d-flex p-2 m-4 flex-row-reverse align-items-center">
+  <!--long words-->
+  <div class="container-examples d-flex flex-column">
+    <div class="button"><p>Pneumonoultramicroscopicsilicovolcanoconiosis</p></div>
+    <br>
+    <div class="button text-wrap"><p>Pneumonoultramicroscopicsilicovolcanoconiosis</p></div>
+</div>
+<div class="container-feature">
+  <h1 class="p-2 m-4">Long words</h1>
+  <p class="main-font p-2 m-4">Use the class <code>text-wrap</code> on your HTML element to fix overflowing words.</p>
+  <p class="main-font p-2 m-4">HTML:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>button</q>&gt;&lt;/div&gt;</code>
+  <p class="main-font p-2 m-4">add CSS class:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>button text-wrap</q>&gt;&lt;/div&gt;</code>
+</div>
+</div>
+<div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
+  <!--min content-size in css flexbox-->
+  <div class="container-examples d-flex flex-column mt-md-5">
+    <div class="d-flex min-content">
+      <div><p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy. </p></div>
+      <div><p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
+      <div><p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
+    </div>
+    <br>
+    <div class="d-flex min-content">
+      <div class="minwidth overflow-all"><p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
+      <div class="minwidth overflow-all"><p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
+      <div class="minwidth overflow-all"><p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
+    </div>
+</div>
+<div class="container-feature">
+  <h1 class="p-2 m-4">Minimum content-size in CSS flexbox</h1>
+  <p class="main-font p-2 m-4">Use the <code>minwidth</code> and <code>overflow-all</code> classes on the element to fix this issue.</p>
+  <p class="main-font p-2 m-4">HTML:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>example</q>&gt;&lt;/div&gt;</code>
+  <p class="main-font p-2 m-4">add CSS class:</p>
+  <code class="code p-4 m-4">&lt;div class=<q> example minwidth overflow-all</q>&gt;&lt;/div&gt;</code>
+</div>
+</div>
+<div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
+  <!--negative margins-->
+  <div class="container-examples d-flex flex-row">
+<!--example missing-->
+</div>
+<div class="container-feature">
+  <h1 class="p-2 m-4">Negative margins</h1>
+  <p class="main-font p-2 m-4">Use the <code>m-0</code>(set margin to zero) and <code>overflow-all</code> classes on your HTML element-</p>
+  <p class="main-font p-2 m-4">HTML:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>element</q>&gt;&lt;/div&gt;</code>
+  <p class="main-font p-2 m-4">add CSS class:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>element overflow-all</q>&gt;&lt;/div&gt;&lt;p class=<q>m-0</q>&gt;&lt;/p&gt;</code>
+</div>
+</div>
+<div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
+  <!--imgs without max width-->
+  <div class="container-examples mt-5" style="min-width:fit-content">
+    <div class="img-container">
+      <img class="fixed-width-img d-block" src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1778&q=80">
+     </div>
+      <br>
+      <div class="img-container minwidth">
+        <img class="fixed-width-img responsive-container" src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1778&q=80">
+       </div>
+</div>
+<div class="container-feature" style="width: 80%">
+  <h1 class="p-2 m-4">Images without max-width</h1>
+  <p class="main-font p-2 m-4">Use the class <code>minwidth</code> on the parent element and the class <code>responsive-container</code> on the image to fix oveflow of images without max-width.</p>
+  <p class="main-font p-2 m-4">HTML:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>img-container</q>&gt;&lt;img class=<q>fixed-width-img&gt;</q>/div&gt;</code>
+  <p class="main-font p-2 m-4">add CSS class:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>img-container minwidth</q>&gt;&lt;/div&gt;img class=<q>fixed-width-img responsive-container&gt;</q>/div&gt;</code>
+</div>
+</div>
+<div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
+  <!--viewport units-->
+  <div class="container-examples d-flex flex-row">
+    <div class="img-wrapper d-flex">
+    <img class="responsive-container m-5" src="images/viewport_units.jpg.jps">
+    </div>
+</div>
+<div class="container-feature w-50">
+  <h1 class="p-2 m-4">Viewport units</h1>
+  <p class="main-font p-2 m-4">Avoid using 100vw as a unit as it can cause overflow. You can fix this overflow in Jacascript: </p>
+  <div class="code-fallback p-2">
+  <code class="code p-2 m-5">function handleFullWidthSizing() {<br>const scrollbarWidth = window.innerWidth - document.body.clientWidth<br>document.querySelector('myElement').style.width = `calc(100vw - ${scrollbarWidth}px)`<br>}</code>
+  </div>
+</div>
+</div>
+<div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
+  <!--injected ads-->
+  <div class="container-examples pt-4">
+    <div class="wrap-1">
+      <iframe src="https://giphy.com/embed/j0LfZjJmu5qZIxb7oj" width="250" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/clioawards-coca-cola-clio-awards-j0LfZjJmu5qZIxb7oj">via GIPHY</a></p>
+      </div>
+      <br>
+    <div class="wrap-1 overflow-hidden mt-3">
+      <iframe src="https://giphy.com/embed/j0LfZjJmu5qZIxb7oj" width="480" height="360" frameBorder="0" class="giphy-embed responsive-container" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/clioawards-coca-cola-clio-awards-j0LfZjJmu5qZIxb7oj">via GIPHY</a></p>
+      </div>
+</div>
+<div class="container-feature w-75">
+  <h1 class="p-2 m-4">Injected ads</h1>
+  <p class="main-font p-2 m-4">Since this problem occurs when the container is wider than the parent element, it is advised to use the <code>overflow: hidden</code> and the <code>wrap</code>classes on the parent element and the <code>responsive-container</code> class on the overflowing element. </p>
+  <p class="main-font p-2 m-4">HTML:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>fixed-width-element</q>&gt;&lt;/div&gt;</code>
+  <p class="main-font p-2 m-4">add CSS class:</p>
+  <code class="code p-4 m-4">&lt;div class=<q>fixed-width-element overflow-all</q>&gt;&lt;/div&gt;</code>
+</div>
+</div>
+</div>
+    </div>
+</main>
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      >szilvia.barath@studio.unibo.it</a>
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      >The Project on Github</a>
+    </section>
+    <!-- Section: Social media -->
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p class="text-center">
+        The Flow is a master's thesis project at the course of Digital Humanities and Digital Knowledge at the University of Bologna.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="http://gutenberg.net.au/ebooks02/0200991h.html" class="text-white">Mrs. Dalloway quotes by Virginia Woolf</a>
+            </li>
+            <li>
+              <a href="http://joyceipsum.com/ulysses/" class="text-white">James Joyce Ulysess Ipsum generator</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  </div>
+  <!-- Grid container -->
+</footer>
+<!-- Footer -->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
