@@ -90,6 +90,10 @@ li .nav-item {
 	padding: 0;
 }
 
+.install-1, .install-2 {
+	flex: 1;
+}
+
 #letters{
 	display:none;
 }
@@ -226,6 +230,9 @@ li .nav-item {
     width: 240px;
     height: 200px;
 	margin-bottom: 40px;
+	-webkit-box-shadow: 5px 5px 15px 5px #000000;
+	box-shadow: 5px 5px 15px 5px #000000;
+	border-radius: 5px;
 }
 
 .fixed-width-img {
@@ -236,6 +243,7 @@ li .nav-item {
 .img-wrapper {
 	width: 350px;
 	height: 350px;
+
 }
 
 .wrap-1 {
@@ -272,4 +280,24 @@ li .nav-item {
 .code-fallback {
 	background-color: #cccccc;
 	border-radius: 5px;
+}
+
+
+.rainbow-button {
+	border: none;
+	border-radius: 10px;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100px;
+	width: 180px;
+}
+
+a  {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 20px;
 }

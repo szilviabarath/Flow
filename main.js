@@ -34,7 +34,15 @@ document.querySelector(".show-all").addEventListener("click",(e) => {
   Array.from(document.querySelectorAll(".abc li")).forEach(el => el.style.display = "block")
 })
 
-function handleFullWidthSizing() {
-    const scrollbarWidth = window.innerWidth - document.body.clientWidth
-    document.querySelector('.vw-example').style.width = `calc(100vw - ${scrollbarWidth}px)`
-  }
+
+function CopyToClipboard(id)
+{
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+}
+
+

@@ -23,7 +23,7 @@
 <!--buttons-->
     <div class="btn-group my-5">
 			<a href="#about" data-target="about" class="btn btn-outline-light"> About</a>
-      <a href="#get-started" data-target="get-started" class="btn btn-outline-light">Get started</a>
+      <a href="#install" data-target="install" class="btn btn-outline-light">Install</a>
 			<a href="#documentation" data-target="documentation" class="btn btn-outline-light">Documentation</a>
       <a href="#examples" data-target="documentation" class="btn btn-outline-light">Examples</a>
 		</div>
@@ -77,12 +77,22 @@
         </div>
     </div>
     <!--about end-->
-    <!--get started start-->
-    <h1 class="logo-small justify-content-center align-items-center d-flex p-2">Get started</h1>
-    <div class="get-started" id="get-started">
-
+    <!--install start-->
+    <h1 class="install logo-small justify-content-center align-items-center d-flex p-2" id="install">Get started</h1>
+    <div class="install-wrapper">
+    <h2 class="justify-content-center align-items-center d-flex m-4 p-4">via package manager</h2>
+    <code class="code m-4 p-4">npm i @miniscott/flow</code>
+    <h2 class="justify-content-center align-items-center d-flex m-4 p-4">via CDN</h2>
+    <h3 class="justify-content-center align-items-center d-flex m-4 p-4">CSS:</h3>
+    <code class="code p-4 m-4 justify-content-center align-items-center d-flex w-50">https://cdn.jsdelivr.net/gh/szilviabarath/flow-css@main/style.css </code>
+    <h3 class="justify-content-center align-items-center d-flex m-4 p-4">JS:</h3>
+    <code class="code p-4 m-4 justify-content-center align-items-center d-flex w-50">https://cdn.jsdelivr.net/gh/szilviabarath/flow-css@main/overflow.js</code>
+    <h2 class="justify-content-center align-items-center d-flex m-4 p-4">Download</h2>
+    <button class="rainbow-button justify-content-center align-items-center d-flex"><a class=" main-font" href="#!">Download</a></button>
     </div>
-    <!--get started end-->
+  </div>
+
+      <!--get started end-->
     <!--documentation start-->
     <div class="wrapper d-lg-flex flex-column" id="documentation">
         <div><h1 class="logo-small justify-content-center align-items-center d-flex p-2">Documentation</h1></div>
@@ -471,5 +481,6 @@
 <script>
   AOS.init();
 </script>
+<script src="dist/clipboard.min.js"></script>
 </body>
 </html>
