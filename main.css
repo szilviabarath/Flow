@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	transition: all .2s linear;
 }
 header {
 	border-bottom: 8px solid;
@@ -29,6 +30,7 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 50px;
+	margin-bottom: 50px;
 	border-bottom: 1px solid black;
 }
 
@@ -90,7 +92,11 @@ li .nav-item {
 	padding: 0;
 }
 
-.install-1, .install-2 {
+.install {
+	display: flex;
+}
+
+.install-wrapper-half {
 	flex: 1;
 }
 
@@ -122,19 +128,18 @@ li .nav-item {
 
 .container-examples {
 	flex: 1;
+
 }
 
 .container-examples.first {
 	width: 70%;
+
 }
 
 .container-examples.second {
 	width: 30%;
 }
 
-.container-feature {
-	flex-1
-}
 
 .fixed-width-element {
 	width: 200px;
@@ -212,17 +217,17 @@ li .nav-item {
   }
 
  .min-content {
-	border: 5px solid black;
-	width: 300px;
-	height: 200px;
-	border-radius: 5px;
+	border: 5px solid white;
+	width: 250px;
+	height: 250px;
 	-webkit-box-shadow: 5px 5px 15px 5px #000000;
 	box-shadow: 5px 5px 15px 5px #000000;
  }
   .min-content > div{
 	flex-shrink: 2;
-	border: 5px solid  #d9428d ;
-	border-radius: 5px;
+	background-color: #d9428d;
+	border: 1px solid white;
+	color: white;
   }
 
   .img-container {
@@ -249,12 +254,16 @@ li .nav-item {
 .wrap-1 {
     width: 200px;
 	height: 200px;
-    border: 2px solid black;
+    background-color: black;
+	box-shadow: 5px 5px 15px 5px #000000;
+	-webkit-box-shadow: 5px 5px 15px 5px #000000;
+	border: 5px solid white;
 }
 
 .wrap-example {
 	width: 300px;
 	border: 5px solid black;
+	background-color: black;
 	display: flex;
 	margin-bottom: 30px;
 	-webkit-box-shadow: 5px 5px 15px 5px #000000;
@@ -266,7 +275,8 @@ li .nav-item {
 .wrap-example > div {
 	min-width: 100px;
 	height: 100px;
-	border: 5px solid #d9428d;
+	border: 5px solid black;
+background-image:url("https://i.redd.it/maexga36d1h71.gif");
 	margin-right: 10px;
 	border-radius: 5px;
 	-webkit-box-shadow: 5px 5px 15px 5px #000000;
@@ -291,7 +301,7 @@ li .nav-item {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100px;
+	height: 80px;
 	width: 180px;
 }
 
@@ -300,4 +310,160 @@ a  {
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 20px;
+}
+
+li a  {
+	color: #d9428d;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.setup-steps li::marker {
+	color: #d9428d;
+	font-weight: bold;
+}
+
+.negative-margins {
+	width: 40%;
+	height: 25%;
+	-webkit-box-shadow: 5px 5px 15px 5px #000000;
+	box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.negative-margins p {
+	padding: 5px;
+	background-color: #d9428d;
+	color: white;
+	margin-left: -20px;
+}
+
+.img-1 {
+	width: 110%;
+}
+
+
+/*media queries*/
+@media (max-width:991px){
+
+    html{
+        font-size: 85%;
+    }
+
+    .header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    header {
+        width:100%;
+    }
+
+	.btn-group a {
+		font-size: 16px;;
+	}
+
+	.subtitle {
+		font-size:16px;
+	}
+
+	.logo, .logo-small {
+		max-width: 100%;
+	}
+
+	.about .container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+
+
+
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+
+    .footer{
+        text-align: center;
+     }
+
+
+	.install {
+		max-width: 100%;
+	}
+
+
+	.install img {
+		max-width: 70%;
+	}
+
+	.install-wrapper-half {
+		max-width: 50%;
+		background-color: black;
+
+	}
+}
+
+@media (max-width:768px){
+
+
+    header {
+        width:100%;
+    }
+
+	.btn-group a {
+		font-size: 16px;;
+	}
+
+	.subtitle {
+		font-size:16px;
+	}
+
+	.logo, .logo-small {
+		max-width: 100%;
+	}
+
+	.about .container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+
+
+
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+	}
+
+    .footer{
+        text-align: center;
+     }
+
+    .footer {
+        margin: 2rem auto;
+    }
+
 }

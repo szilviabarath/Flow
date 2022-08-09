@@ -3,7 +3,11 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Flow - CSS framework</title>
+    <meta name="description" content="CSS framework for resolving overflow issues.">
+    <meta name="keywords" content="CSS, overflow">
+    <meta name="author" content="Baráth Szilvia Szeréna">
+    <link rel="icon" type="image/x-icon" href="https://media.istockphoto.com/vectors/black-and-white-room-vector-id1214810768?b=1&k=20&m=1214810768&s=170667a&w=0&h=c8nGPg50YdxUeiYHPxch_Ar2gi5UmG3kyDasMa0h9q8=">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -19,7 +23,7 @@
 
 	<div class="d-flex flex-column justify-content-center align-items-center">
 <!--title-->
-		<a class="fw-light text-white logo" href="index.html">Flow</a><p class="fw-light text-white m-0">Fix overflow issues</p>
+		<a class="fw-light text-white logo" href="index.html">Flow</a><p class="fw-light text-white m-0 subtitle">Fix overflow issues</p>
 <!--buttons-->
     <div class="btn-group my-5">
 			<a href="#about" data-target="about" class="btn btn-outline-light"> About</a>
@@ -37,70 +41,86 @@
 <main>
   <!--about start-->
     <div class="about" id="about">
-        <h1 class="justify-content-center align-items-center d-flex p-2 logo-small" data-aos="fade-up" data-aos-duration="3000">Flow</h1>
-        <div class="container h-100">
+        <h1 class="justify-content-center align-items-center d-flex p-2 mb-4 logo-small">Flow</h1>
+        <div class="container h-100 mb-4">
             <!-- Column -->
             <div class="container__column">
                 <!-- Cover -->
-                <iframe src="https://giphy.com/embed/26BoDNQVltRhO8tW0" data-aos="fade-up" data-aos-duration="3000" width="250" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <iframe src="https://giphy.com/embed/26BoDNQVltRhO8tW0" width="250" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
                 <!-- Content -->
                 <div class="container__content">
-                    <p class="main-font p-2" data-aos="fade-up" data-aos-duration="3000">Quick to install thanks to the various options.</p>
+                    <p class="main-font p-2">Quick to install thanks to the various options.</p>
                 </div>
              <!-- Column -->
             </div>
              <div class="container__column">
                 <!-- Cover -->
-                <iframe src="https://giphy.com/embed/8vCEqOltLHutTM28NG" data-aos="fade-up" data-aos-duration="3000" width="250" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <iframe src="https://giphy.com/embed/8vCEqOltLHutTM28NG"  width="250" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                 <!-- Content -->
                 <div class="container__content">
-                    <p class="main-font p-2" data-aos="fade-up" data-aos-duration="3000">Easy to use with the help of the built-in classes.</p>
+                    <p class="main-font p-2">Easy to use with the help of the built-in classes.</p>
                 </div>
              </div>     <!-- Column -->
             <div class="container__column">
                 <!-- Cover -->
-                <iframe src="https://giphy.com/embed/8lNbsS9W8Dd1wTZDVU" data-aos="fade-up" data-aos-duration="3000" width="250" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <iframe src="https://giphy.com/embed/8lNbsS9W8Dd1wTZDVU" width="250" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                 <!-- Content -->
                 <div class="container__content">
-                    <p class="main-font p-2" data-aos="fade-up" data-aos-duration="3000">CSS and JavaScript solutions for targeting common overflow issues.</p>
+                    <p class="main-font p-2">CSS and JavaScript solutions for targeting common overflow issues.</p>
                 </div>
             </div>
                      <!-- Column -->
             <div class="container__column">
                 <!-- Cover -->
-                <iframe src="https://giphy.com/embed/7Eh28wlW0fzCVA4VjJ" data-aos="fade-up" data-aos-duration="3000" width="250" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <iframe src="https://giphy.com/embed/7Eh28wlW0fzCVA4VjJ" width="250" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                 <!-- Content -->
                 <div class="container__content">
-                    <p class="main-font p-2" data-aos="fade-up" data-aos-duration="3000">Make elements fit perfectly by adding some simple CSS classes.</p>
+                    <p class="main-font p-2" >Make elements fit perfectly by adding some simple CSS classes.</p>
                 </div>
         </div>
     </div>
     <!--about end-->
     <!--install start-->
-    <h1 class="install logo-small justify-content-center align-items-center d-flex p-2" data-aos="fade-up" data-aos-duration="4000"  data-aos-offset="10" id="install">Get started</h1>
-    <div class="install-wrapper">
-    <h2 class="justify-content-center align-items-center d-flex m-4 p-4">via package manager</h2>
+
+    <h1 class="install logo-small justify-content-center align-items-center d-flex p-2 m-2" id="install">Get started</h1>
+    <div class="install">
+    <div class="install-wrapper-half">
+    <h1 class="m-2 p-4">Install</h1>
+    <h2 class="justify-content-left align-items-left d-flex m-2 p-4">via package manager</h2>
     <code class="code m-4 p-4">npm i @miniscott/flow</code>
-    <h2 class="justify-content-center align-items-center d-flex m-4 p-4">via CDN</h2>
-    <h3 class="justify-content-center align-items-center d-flex m-4 p-4">CSS:</h3>
-    <code class="code p-4 m-4 justify-content-center align-items-center d-flex w-50">https://cdn.jsdelivr.net/gh/szilviabarath/flow-css@main/style.css </code>
-    <h3 class="justify-content-center align-items-center d-flex m-4 p-4">JS:</h3>
-    <code class="code p-4 m-4 justify-content-center align-items-center d-flex w-50">https://cdn.jsdelivr.net/gh/szilviabarath/flow-css@main/overflow.js</code>
-    <h2 class="justify-content-center align-items-center d-flex m-4 p-4">Download</h2>
-    <button class="rainbow-button justify-content-center align-items-center d-flex"><a class=" main-font" href="#!">Download</a></button>
+    <h2 class="justify-content-left align-items-left d-flex m-2 p-4">via CDN</h2>
+    <h3 class="justify-content-left align-items-left d-flex m-2 p-4">CSS:</h3>
+    <code class="code p-4 m-4 justify-content-center align-items-center d-flex">https://cdn.jsdelivr.net/gh/szilviabarath/flow-css@main/style.css </code>
+    <h3 class="justify-content-left align-items-left d-flex m-2 p-4">JS:</h3>
+    <code class="code p-4 m-4 justify-content-center align-items-center d-flex">https://cdn.jsdelivr.net/gh/szilviabarath/flow-css@main/overflow.js</code>
+    <h2 class="justify-content-left align-items-left d-flex m-2 p-4">Download</h2>
+    <div class="text-center">
+    <button class="rainbow-button justify-content-center align-items-center m-2 p-4 d-inline-flex"><a class=" main-font" href="./flow-css.zip" download>Download</a></button>
+    </div>
+  </div>
+    <div class="install-wrapper-half">
+    <h1 class="p-4 m-4">Setup</h1>
+      <ol class="setup-steps">
+        <li class="main-font mx-4">Chose from one of the install options.</li>
+        <li class="main-font mx-4">Check overflowing elements with the overflow-checker in your console.</li>
+        <li class="main-font mx-4">Choose the class from the <a class="main-font" href="#documentation">classlist</a> that is most likely to solve you overflow problem.</li>
+        <li class="main-font mx-4">If you are not sure which class to use, jump to the <a class="main-font" href="#examples">example uses.</a></li>
+        <li class="main-font mx-4">Add the class to your HTML element. As simple as that!</a></li>
+      </ol>
+      <div><img class="spiral m-4 p-4" src="https://media.istockphoto.com/vectors/black-and-white-room-vector-id1214810768?b=1&k=20&m=1214810768&s=170667a&w=0&h=c8nGPg50YdxUeiYHPxch_Ar2gi5UmG3kyDasMa0h9q8="></div>
     </div>
   </div>
 
       <!--get started end-->
     <!--documentation start-->
-    <div class="wrapper d-lg-flex flex-column" id="documentation">
-        <div><h1 class="logo-small justify-content-center align-items-center d-flex p-2" data-aos="fade-up" data-aos-duration="4000"  data-aos-offset="10">Documentation</h1></div>
-        <div class="documentation-container d-flex flex-row-reverse"></div>
+    <div class="wrapper d-lg-flex flex-column mb-4" id="documentation">
+        <div><h1 class="logo-small justify-content-center align-items-center d-flex p-2 mb-4" data-aos="fade-up" data-aos-duration="4000"  data-aos-offset="10">Documentation</h1></div>
+
     <div class="row">
       <div class="col-3">
             <!--classes-->
-        <nav class="nav d-flex flex-column p-2">
+        <nav class="nav d-flex flex-column p-2 pt-0">
           <a class="nav-link m-2 p-2 main-font black all-classes classes" data-type="all" id="all-classes" href="#a-z">All classes</a>
           <a class="nav-link active m-2 p-2 main-font black main-classes classes" data-type="main" aria-current="page" href="#">Main classes</a>
           <a class="nav-link m-2 p-2 main-font black secondary-classes classes" data-type="secondary"  href="#">Secondary classes</a>
@@ -194,37 +214,37 @@
           <!--all classes-->
       <div class="abc-all">
       <ul class="abc main-fonts overflow-y">
-        <li data-id="i" data-secondary="">img<p>Sets display image to block</p></li>
-        <li data-id="m" data-secondary="">m-0<p>Sets all margins to zero</p></li>
-        <li data-id="m" data-secondary="">minmax<p>Makes grid-template-columns responsive</p></li>
-        <li data-id="m" data-secondary="">minwidth<p>Adds height: auto and a min-width: 10px to elements. </p></li>
-        <li data-id="o" data-main = "1">overflow-all<p>Sets overflow to scroll and text-overflow to scroll </p></li>
-        <li data-id="o" data-main = "1">overflow-height<p>Sets the height to 100%</p></li>
-        <li data-id="o" data-main = "1">overflow-hidden<p>Hides overflow</p></li>
-        <li data-id="o" data-main = "">overflow-scroll<p>Sets overflow to scroll</li>
-        <li data-id="o" data-main = "1">overflow-width<p>Sets width to 100%
-        <li data-id="o" data-main = "1">overflow-x<p>Sets the horizontal scrollbar</li>
-        <li data-id="o" data-main = "1">overflow-y<p>Sets the vertical scrollbar</li>
-        <li data-id="r" data-secondary = "1">responsive-container<p>Sets height to auto, width to 100% and defines a max-width.</li>
-        <li data-id="t" data-secondary = "1">text-wrap<p>Sets the word-wrap to wrap.</li>
-        <li data-id="w" data-secondary="">wrap<p>Sets flex-wrap to wrap.</li>
+        <li data-id="i" data-secondary=""><code>img</code><p>Sets display image to block</p></li>
+        <li data-id="m" data-secondary=""><code>m-0</code><p>Sets all margins to zero</p></li>
+        <li data-id="m" data-secondary=""><code>minmax</code><p>Makes grid-template-columns responsive</p></li>
+        <li data-id="m" data-secondary=""><code>minwidth</code><p>Adds height: auto and a min-width: 10px to elements. </p></li>
+        <li data-id="o" data-main = "1"><code>overflow-all</code><p>Sets overflow to scroll and text-overflow to scroll </p></li>
+        <li data-id="o" data-main = "1"><code>overflow-height</code><p>Sets the height to 100%</p></li>
+        <li data-id="o" data-main = "1"><code>overflow-hidden</code><p>Hides overflow</p></li>
+        <li data-id="o" data-main = ""><code>overflow-scroll</code><p>Sets overflow to scroll</li>
+        <li data-id="o" data-main = "1"><code>overflow-width</code><p>Sets width to 100%
+        <li data-id="o" data-main = "1"><code>overflow-x</code><p>Sets the horizontal scrollbar</li>
+        <li data-id="o" data-main = "1"><code>overflow-y</code><p>Sets the vertical scrollbar</li>
+        <li data-id="r" data-secondary = "1"><code>responsive-container</code><p>Sets height to auto, width to 100% and defines a max-width.</li>
+        <li data-id="t" data-secondary = "1"><code>text-wrap</code><p>Sets the word-wrap to wrap.</li>
+        <li data-id="w" data-secondary=""><code>wrap</code><p>Sets flex-wrap to wrap.</li>
       </ul>
       </div>
     </div>
     </div>
     </div>
     <!--examples start-->
-<h1 class="logo-small justify-content-center align-items-center d-flex" id="examples" data-aos="fade-up" data-aos-duration="4000"  data-aos-offset="10">Examples</h1>
+<h1 class="logo-small justify-content-center align-items-center d-flex mt-4" id="examples" data-aos="fade-up" data-aos-duration="4000"  data-aos-offset="10">Examples</h1>
 <div class="wrap-documentation">
 <div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
   <!--fixed-width elements-->
   <div class="container-examples d-flex flex-row pt-4">
-  <div class="fixed-width-element"><p class="main-font white p-2 m-2">Mrs. Dalloway said she would buy the flowers herself.
-    For Lucy had her work cut out for her. The doors would be taken off their hinges; Rumpelmayer's men were coming.
-     And then, thought Clarissa Dalloway, what a morning—fresh as if issued to children on a beach.</p></div>
-     <div class="fixed-width-element d-flex overflow-all"><p class="main-font white p-2 m-2">Mrs. Dalloway said she would buy the flowers herself.
-        For Lucy had her work cut out for her. The doors would be taken off their hinges; Rumpelmayer's men were coming.
-         And then, thought Clarissa Dalloway, what a morning—fresh as if issued to children on a beach.</p></div>
+  <div class="fixed-width-element">
+    <iframe src="https://giphy.com/embed/ZKEg50Gkzd3iek1y6x" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  </div>
+     <div class="fixed-width-element d-flex overflow-all">
+      <iframe src="https://giphy.com/embed/ZKEg50Gkzd3iek1y6x" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+     </div>
 </div>
 <div class="container-feature">
   <h1 class="p-2 m-4">Fixed-width elements</h1>
@@ -236,7 +256,7 @@
 </div>
 </div>
 </div>
-<div class="documentation-container d-flex p-2 m-4 flex-row-reverse justify-content-center align-items-center">
+<div class="documentation-container d-flex p-4 m-4 flex-row-reverse justify-content-center align-items-center">
   <!----flexbox without wrapping-->
   <div class="container-examples d-flex-row pt-5">
       <div class="wrap-example wrap-example-1 mt-2">
@@ -309,15 +329,15 @@
   <!--min content-size in css flexbox-->
   <div class="container-examples d-flex flex-column mt-md-5">
     <div class="d-flex min-content">
-      <div><p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy. </p></div>
-      <div><p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
-      <div><p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
+      <div><p class="main-font">Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy. </p></div>
+      <div><p class="main-font">Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
+      <div><p class="main-font">Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
     </div>
     <br>
     <div class="d-flex min-content">
-      <div class="minwidth overflow-all"><p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
-      <div class="minwidth overflow-all"><p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
-      <div class="minwidth overflow-all"><p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
+      <div class="minwidth overflow-all"><p class="main-font">Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
+      <div class="minwidth overflow-all"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
+      <div class="minwidth overflow-all"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
     </div>
 </div>
 <div class="container-feature">
@@ -331,10 +351,9 @@
 </div>
 <div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
   <!--negative margins-->
-  <div class="container-examples d-flex flex-row">
-  <div class="image-holder mt-5">
-    <img src="images/negative_margins.jpg">
-  </div>
+  <div class="container-examples d-flex flex-row justify-content-evenly pt-5">
+    <div class="negative-margins overflow-hidden"><p>Lorem ipsum dolor sit amet, con Lorem ipsum dolor</p></div>
+    <div class="negative-margins"><p class="m-0">Lorem ipsum dolor sit amet, con Lorem ipsum dolor</p></div>
 </div>
 <div class="container-feature">
   <h1 class="p-2 m-4">Negative margins</h1>
@@ -349,11 +368,11 @@
   <!--imgs without max width-->
   <div class="container-examples mt-5" style="min-width:fit-content">
     <div class="img-container">
-      <img class="fixed-width-img d-block" src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1778&q=80">
+      <img class="fixed-width-img d-block img-1" src="https://thumbs.dreamstime.com/b/optical-illusion-abstract-lines-background-geometric-black-white-optical-illusion-abstract-lines-background-geometric-black-148070793.jpg">
      </div>
       <br>
       <div class="img-container minwidth">
-        <img class="fixed-width-img responsive-container" src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1778&q=80">
+        <img class="fixed-width-img responsive-container" src="https://thumbs.dreamstime.com/b/optical-illusion-abstract-lines-background-geometric-black-white-optical-illusion-abstract-lines-background-geometric-black-148070793.jpg">
        </div>
 </div>
 <div class="container-feature" style="width: 80%">
@@ -384,12 +403,10 @@
   <!--injected ads-->
   <div class="container-examples pt-4">
     <div class="wrap-1">
-      <iframe src="https://giphy.com/embed/j0LfZjJmu5qZIxb7oj" width="250" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/clioawards-coca-cola-clio-awards-j0LfZjJmu5qZIxb7oj">via GIPHY</a></p>
-      </div>
+      <iframe src="https://giphy.com/embed/GQsDTssmn54ic" width="250" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/okkultmotionpictures-black-and-white-vintage-food-GQsDTssmn54ic">via GIPHY</a></p>      </div>
       <br>
     <div class="wrap-1 overflow-hidden mt-3">
-      <iframe src="https://giphy.com/embed/j0LfZjJmu5qZIxb7oj" width="480" height="360" frameBorder="0" class="giphy-embed responsive-container" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/clioawards-coca-cola-clio-awards-j0LfZjJmu5qZIxb7oj">via GIPHY</a></p>
-      </div>
+      <iframe src="https://giphy.com/embed/GQsDTssmn54ic" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/okkultmotionpictures-black-and-white-vintage-food-GQsDTssmn54ic">via GIPHY</a></p>      </div>
 </div>
 <div class="container-feature w-75">
   <h1 class="p-2 m-4">Injected ads</h1>
@@ -408,14 +425,14 @@
   <!-- Grid container -->
   <div class="container p-4">
     <!-- Section: Social media -->
-    <section class="mb-4">
+    <section class="mb-4 w-100">
 
       <!-- Google -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1 d-inline-block" href="mailto:szilvia.barath@studio.unibo.it" target="_blank" role="button"
         ><i class="fab fa-google"></i
-      >szilvia.barath@studio.unibo.it</a>
+      >Contact me</a>
       <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1 d-inline-block" href="https://github.com/szilviabarath/flow-css.git" target="_blank" role="button"
         ><i class="fab fa-github"></i
       >The Project on Github</a>
     </section>
@@ -424,19 +441,20 @@
     <section class="mb-4">
       <p class="text-center">
         The Flow is a master's thesis project at the course of Digital Humanities and Digital Knowledge at the University of Bologna.
+        Images are under a Creative Commons license.
       </p>
     </section>
     <!-- Section: Text -->
 
     <!-- Section: Links -->
-    <section class="">
+    <section class="w-100">
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->
-        <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Quotes used for examples</h5>
+        <div class="col-lg-12 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase justify-content-center align-items-center d-flex">Quotes used for examples</h5>
 
-          <ul class="list-unstyled mb-0">
+          <ul class="list-unstyled justify-content-center align-items-center mb-0">
             <li>
               <a href="http://gutenberg.net.au/ebooks02/0200991h.html" target="_blank"  class="text-white">Mrs. Dalloway quotes by Virginia Woolf</a>
             </li>
@@ -444,10 +462,7 @@
               <a href="http://joyceipsum.com/ulysses/" target="_blank" class="text-white">James Joyce Ulysess Ipsum generator</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
+              <a href="https://www.dictionary.com/browse/pneumonoultramicroscopicsilicovolcanoconiosis" class="text-white">Longest word in the English language</a>
             </li>
           </ul>
         </div>
@@ -458,10 +473,7 @@
 <!-- Footer -->
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
 </script>
-<script src="dist/clipboard.min.js"></script>
+
 </body>
 </html>

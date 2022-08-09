@@ -45,4 +45,4 @@ document.execCommand('copy');
 window.getSelection().removeAllRanges();
 }
 
-
+document.querySelector("#letters").style.display = "block";
