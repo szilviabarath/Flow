@@ -34,15 +34,22 @@ document.querySelector(".show-all").addEventListener("click",(e) => {
   Array.from(document.querySelectorAll(".abc li")).forEach(el => el.style.display = "block")
 })
 
+function copyStringToClipboard (str) {
+    str.select();
+    document.execCommand('copy');
+    navigator.clipboard.writeText(str.value);
+ }
 
-function CopyToClipboard(id)
-{
-var r = document.createRange();
-r.selectNode(document.getElementById(id));
-window.getSelection().removeAllRanges();
-window.getSelection().addRange(r);
-document.execCommand('copy');
-window.getSelection().removeAllRanges();
-}
+let copies = document.querySelectorAll(".code");
+copies.forEach(c => {
+    c.addEventListener("click",()=> {
+        let text = c.querySelector("code").innerText
+        console.log(text)
+        navigator.clipboard.writeText(text)
+    })
+})
+
+
+
 
 document.querySelector("#letters").style.display = "block";

@@ -10,7 +10,6 @@
     <link rel="icon" type="image/x-icon" href="https://media.istockphoto.com/vectors/black-and-white-room-vector-id1214810768?b=1&k=20&m=1214810768&s=170667a&w=0&h=c8nGPg50YdxUeiYHPxch_Ar2gi5UmG3kyDasMa0h9q8=">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='globals.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
      <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
@@ -19,7 +18,7 @@
 <body>
 <header>
 <!--header-->
-    <div class="menu d-flex flex-column justify-content-center w-100 h-100">
+  <div class="menu d-flex flex-column justify-content-center w-100 h-100">
 
 	<div class="d-flex flex-column justify-content-center align-items-center">
 <!--title-->
@@ -83,39 +82,48 @@
     <!--about end-->
     <!--install start-->
 
-    <h1 class="install logo-small justify-content-center align-items-center d-flex p-2 m-2" id="install">Get started</h1>
+    <h1 class="install main-font justify-content-center align-items-center d-flex p-2 m-2" id="install"><b>Get started</b></h1>
     <div class="install">
     <div class="install-wrapper-half">
-    <h1 class="m-2 p-4">Install</h1>
-    <h2 class="justify-content-left align-items-left d-flex m-2 p-4">via package manager</h2>
-    <code class="code m-4 p-4">npm i @miniscott/flow</code>
-    <h2 class="justify-content-left align-items-left d-flex m-2 p-4">via CDN</h2>
-    <h3 class="justify-content-left align-items-left d-flex m-2 p-4">CSS:</h3>
-    <code class="code p-4 m-4 justify-content-center align-items-center d-flex">https://cdn.jsdelivr.net/gh/szilviabarath/flow-css@main/style.css </code>
-    <h3 class="justify-content-left align-items-left d-flex m-2 p-4">JS:</h3>
-    <code class="code p-4 m-4 justify-content-center align-items-center d-flex">https://cdn.jsdelivr.net/gh/szilviabarath/flow-css@main/overflow.js</code>
-    <h2 class="justify-content-left align-items-left d-flex m-2 p-4">Download</h2>
-    <div class="text-center">
-    <button class="rainbow-button justify-content-center align-items-center m-2 p-4 d-inline-flex"><a class=" main-font" href="./flow-css.zip" download>Download</a></button>
+    <h1 class="m-2 p-4 main-font">Install</h1>
+    <h2 class=" m-2 p-4 main-font">via package manager</h2>
+    <div class="d-inline-flex p-4 m-4 code align-items-center">
+    <code class="code">npm i @miniscott/flow</code>
+    <img class="copy-icon" src="https://img.icons8.com/ios-glyphs/30/000000/copy.png"/>
+    </div>
+    <h2 class="m-2 p-4 main-font">via CDN</h2>
+    <h3 class=" m-2 p-4 main-font">CSS:</h3>
+    <div class="d-inline-flex p-4 m-4 code align-items-center">
+    <code class="code justify-content-center align-items-center d-flex">https://cdn.jsdelivr.net/gh/szilviabarath/flow-css@main/style.css </code>
+    <img class="copy-icon" src="https://img.icons8.com/ios-glyphs/30/000000/copy.png"/>
+  </div>
+    <h3 class="m-2 p-4 main-font">JS:</h3>
+    <div class="d-inline-flex p-4 m-4 code align-items-center">
+    <code class="code justify-content-center align-items-center d-flex">https://cdn.jsdelivr.net/gh/szilviabarath/flow-css@main/overflow.js</code>
+    <img class="copy-icon" src="https://img.icons8.com/ios-glyphs/30/000000/copy.png"/>
+  </div>
+    <h2 class="m-4 p-2">Download</h2>
+    <div class="text-left m-2 p-2">
+    <button class="rainbow-button justify-content-center align-items-center m-2 p-4 d-inline-flex"><a class="main-font" href="./flow-css.zip" download>Download</a></button>
     </div>
   </div>
     <div class="install-wrapper-half">
-    <h1 class="p-4 m-4">Setup</h1>
+    <h1 class="p-2 m-4">Setup</h1>
       <ol class="setup-steps">
-        <li class="main-font mx-4">Chose from one of the install options.</li>
+        <li class="main-font mx-4">Choose from one of the install options.</li>
         <li class="main-font mx-4">Check overflowing elements with the overflow-checker in your console.</li>
         <li class="main-font mx-4">Choose the class from the <a class="main-font" href="#documentation">classlist</a> that is most likely to solve you overflow problem.</li>
         <li class="main-font mx-4">If you are not sure which class to use, jump to the <a class="main-font" href="#examples">example uses.</a></li>
         <li class="main-font mx-4">Add the class to your HTML element. As simple as that!</a></li>
       </ol>
-      <div><img class="spiral m-4 p-4" src="https://media.istockphoto.com/vectors/black-and-white-room-vector-id1214810768?b=1&k=20&m=1214810768&s=170667a&w=0&h=c8nGPg50YdxUeiYHPxch_Ar2gi5UmG3kyDasMa0h9q8="></div>
+      <div class="center-sm"><img class="spiral m-4 p-4" src="https://media.istockphoto.com/vectors/black-and-white-room-vector-id1214810768?b=1&k=20&m=1214810768&s=170667a&w=0&h=c8nGPg50YdxUeiYHPxch_Ar2gi5UmG3kyDasMa0h9q8="></div>
     </div>
   </div>
 
       <!--get started end-->
     <!--documentation start-->
     <div class="wrapper d-lg-flex flex-column mb-4" id="documentation">
-        <div><h1 class="logo-small justify-content-center align-items-center d-flex p-2 mb-4" data-aos="fade-up" data-aos-duration="4000"  data-aos-offset="10">Documentation</h1></div>
+        <div><h1 class="justify-content-center align-items-center d-flex p-2 mb-4"><b>Documentation</b></h1></div>
 
     <div class="row">
       <div class="col-3">
@@ -234,11 +242,10 @@
     </div>
     </div>
     <!--examples start-->
-<h1 class="logo-small justify-content-center align-items-center d-flex mt-4" id="examples" data-aos="fade-up" data-aos-duration="4000"  data-aos-offset="10">Examples</h1>
-<div class="wrap-documentation">
+<h1 class=" justify-content-center align-items-center d-flex mt-2" id="examples"><b>Examples</b></h1>
 <div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
   <!--fixed-width elements-->
-  <div class="container-examples d-flex flex-row pt-4">
+  <div class="container-examples d-flex flex-row pt-4 center-sm w-50">
   <div class="fixed-width-element">
     <iframe src="https://giphy.com/embed/ZKEg50Gkzd3iek1y6x" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
   </div>
@@ -246,8 +253,8 @@
       <iframe src="https://giphy.com/embed/ZKEg50Gkzd3iek1y6x" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
      </div>
 </div>
-<div class="container-feature">
-  <h1 class="p-2 m-4">Fixed-width elements</h1>
+<div class="container-feature w-50">
+  <h1 class="p-2 m-4 main-font">Fixed-width elements</h1>
   <p class="main-font p-2 m-4">Use the class <code>overflow-all</code> on your HTML element to fix overflow for fixed width elements.</p>
   <p class="main-font p-2 m-4">HTML:</p>
   <code class="code p-4 m-4">&lt;div class=<q>fixed-width-element</q>&gt;&lt;/div&gt;</code>
@@ -255,10 +262,9 @@
   <code class="code p-4 m-4">&lt;div class=<q>fixed-width-element overflow-all</q>&gt;&lt;/div&gt;</code>
 </div>
 </div>
-</div>
 <div class="documentation-container d-flex p-4 m-4 flex-row-reverse justify-content-center align-items-center">
   <!----flexbox without wrapping-->
-  <div class="container-examples d-flex-row pt-5">
+  <div class="container-examples d-flex-row pt-5 center-sm column-direction w-50">
       <div class="wrap-example wrap-example-1 mt-2">
         <div></div>
         <div></div>
@@ -272,7 +278,7 @@
     </div>
 <div class="container-feature w-50">
   <h1 class="p-2 mb-4 ml-4 mr-4 mt-0">Flexbox without wrapping</h1>
-  <p class="main-font p-2 m-4">Use the class <code>wrap</code> on your HTML element to fix overflow for fixed width elements.</p>
+  <p class="main-font p-2 m-2">Use the class <code>wrap</code> on your HTML element to fix overflow for fixed width elements.</p>
   <p class="main-font p-2 m-4">HTML:</p>
   <code class="code p-4 m-4">&lt;div class=<q>flex</q>&gt;&lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
@@ -283,9 +289,9 @@
   </code>
 </div>
 </div>
-<div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
+<div class="documentation-container css-grid d-flex p-2 m-4 flex-row-reverse">
   <!--css grid-->
-  <div class="container-examples d-flex flex-row mt-4">
+  <div class="container-examples d-flex flex-row mt-4 center-sm w-50">
     <div class="grid-container m-2 p-2">
       <div class="grid1 b"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p><img class="responsive-container" src="https://images.unsplash.com/photo-1460039230329-eb070fc6c77c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"></div>
       <div class="grid2 b"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p><img class="responsive-container" src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=404&q=80"></div>
@@ -299,7 +305,7 @@
       <div class="grid4 b  minmax overflow-all"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p><img class="responsive-container" src="https://images.unsplash.com/photo-1613539246066-78db6ec4ff0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80"></div>
     </div>
   </div>
-<div class="container-feature">
+<div class="container-feature w-50">
   <h1 class="p-2 m-4">CSS grids</h1>
   <p class="main-font p-2 m-4">Use the class <code>minmax</code> on your HTML element to fix overflow for fixed width elements.</p>
   <p class="main-font p-2 m-4">It is good practice to use fr units with your grids. Read more about it <a href="https://www.digitalocean.com/community/tutorials/css-css-grid-layout-fr-unit" target="_blank">here.</a>
@@ -311,12 +317,12 @@
 </div>
 <div class="documentation-container d-flex p-2 m-4 flex-row-reverse align-items-center">
   <!--long words-->
-  <div class="container-examples d-flex flex-column">
+  <div class="container-examples long-words d-flex flex-column center-sm w-50">
     <div class="button"><p>Pneumonoultramicroscopicsilicovolcanoconiosis</p></div>
     <br>
     <div class="button text-wrap"><p>Pneumonoultramicroscopicsilicovolcanoconiosis</p></div>
 </div>
-<div class="container-feature">
+<div class="container-feature w-50">
   <h1 class="p-2 m-4">Long words</h1>
   <p class="main-font p-2 m-4">Use the class <code>text-wrap</code> on your HTML element to fix overflowing words.</p>
   <p class="main-font p-2 m-4">HTML:</p>
@@ -325,9 +331,9 @@
   <code class="code p-4 m-4">&lt;div class=<q>button text-wrap</q>&gt;&lt;/div&gt;</code>
 </div>
 </div>
-<div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
+<div class="documentation-container min-content-size d-flex p-2 m-4 flex-row-reverse">
   <!--min content-size in css flexbox-->
-  <div class="container-examples d-flex flex-column mt-md-5">
+  <div class="container-examples  d-flex flex-column mt-md-5 center-sm w-50">
     <div class="d-flex min-content">
       <div><p class="main-font">Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy. </p></div>
       <div><p class="main-font">Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
@@ -340,7 +346,7 @@
       <div class="minwidth overflow-all"><p class="main-font">Mrs. Dalloway said she would buy the flowers herself.</p>Smellow he proves by algebra cyclops the snotgreen sea kidneys metempsychosis Rudy.</p></div>
     </div>
 </div>
-<div class="container-feature">
+<div class="container-feature w-50">
   <h1 class="p-2 m-4">Minimum content-size in CSS flexbox</h1>
   <p class="main-font p-2 m-4">Use the <code>minwidth</code> and <code>overflow-all</code> classes on the element to fix this issue.</p>
   <p class="main-font p-2 m-4">HTML:</p>
@@ -349,13 +355,13 @@
   <code class="code p-4 m-4">&lt;div class=<q> example minwidth overflow-all</q>&gt;&lt;/div&gt;</code>
 </div>
 </div>
-<div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
+<div class="documentation-container d-flex p-2 m-4 pb-4 flex-row-reverse">
   <!--negative margins-->
-  <div class="container-examples d-flex flex-row justify-content-evenly pt-5">
+  <div class="container-examples d-flex flex-row justify-content-evenly pt-5 center-sm w-50">
     <div class="negative-margins overflow-hidden"><p>Lorem ipsum dolor sit amet, con Lorem ipsum dolor</p></div>
     <div class="negative-margins"><p class="m-0">Lorem ipsum dolor sit amet, con Lorem ipsum dolor</p></div>
 </div>
-<div class="container-feature">
+<div class="container-feature w-50">
   <h1 class="p-2 m-4">Negative margins</h1>
   <p class="main-font p-2 m-4">Use the <code>m-0</code>(set margin to zero) and <code>overflow-all</code> classes on your HTML element-</p>
   <p class="main-font p-2 m-4">HTML:</p>
@@ -366,7 +372,7 @@
 </div>
 <div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
   <!--imgs without max width-->
-  <div class="container-examples mt-5" style="min-width:fit-content">
+  <div class="container-examples mt-5 center-sm column-direction w-50" style="min-width:fit-content">
     <div class="img-container">
       <img class="fixed-width-img d-block img-1" src="https://thumbs.dreamstime.com/b/optical-illusion-abstract-lines-background-geometric-black-white-optical-illusion-abstract-lines-background-geometric-black-148070793.jpg">
      </div>
@@ -375,7 +381,7 @@
         <img class="fixed-width-img responsive-container" src="https://thumbs.dreamstime.com/b/optical-illusion-abstract-lines-background-geometric-black-white-optical-illusion-abstract-lines-background-geometric-black-148070793.jpg">
        </div>
 </div>
-<div class="container-feature" style="width: 80%">
+<div class="container-feature w-75">
   <h1 class="p-2 m-4">Images without max-width</h1>
   <p class="main-font p-2 m-4">Use the class <code>minwidth</code> on the parent element and the class <code>responsive-container</code> on the image to fix oveflow of images without max-width.</p>
   <p class="main-font p-2 m-4">HTML:</p>
@@ -386,7 +392,7 @@
 </div>
 <div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
   <!--viewport units-->
-  <div class="container-examples d-flex flex-row">
+  <div class="container-examples d-flex flex-row center-sm w-50">
     <div class="img-wrapper d-flex">
     <img class="responsive-container m-5" src="images/vp_units.jpg">
     </div>
@@ -401,14 +407,14 @@
 </div>
 <div class="documentation-container d-flex p-2 m-4 flex-row-reverse">
   <!--injected ads-->
-  <div class="container-examples pt-4">
+  <div class="container-examples pt-4 pb-4 center-sm column-direction w-50">
     <div class="wrap-1">
       <iframe src="https://giphy.com/embed/GQsDTssmn54ic" width="250" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/okkultmotionpictures-black-and-white-vintage-food-GQsDTssmn54ic">via GIPHY</a></p>      </div>
       <br>
     <div class="wrap-1 overflow-hidden mt-3">
       <iframe src="https://giphy.com/embed/GQsDTssmn54ic" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/okkultmotionpictures-black-and-white-vintage-food-GQsDTssmn54ic">via GIPHY</a></p>      </div>
 </div>
-<div class="container-feature w-75">
+<div class="container-feature w-50">
   <h1 class="p-2 m-4">Injected ads</h1>
   <p class="main-font p-2 m-4">Since this problem occurs when the container is wider than the parent element, it is advised to use the <code>overflow: hidden</code> and the <code>wrap</code>classes on the parent element and the <code>responsive-container</code> class on the overflowing element. </p>
   <p class="main-font p-2 m-4">HTML:</p>

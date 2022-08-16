@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500&display=swap');
 :root {
     --bg: #f9d1d1;
     --l-gray: #cccccc;
@@ -19,7 +19,11 @@
 }
 
 .main-font {
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Urbanist', sans-serif;
 }
 .d-flex {
     display: flex;
