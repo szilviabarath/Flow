@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500&display=swap');
 
 
@@ -10,6 +9,10 @@
 
 .black {
     color: black;
+}
+
+.pink {
+    color: #d9428d;
 }
 
 .d-block {
@@ -84,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .code {
+    color: black !important;
     background-color: #cccccc;
     border-radius: 3px;
 }
