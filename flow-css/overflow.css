@@ -8,7 +8,6 @@
 
 .overflow-all {
     overflow: scroll;
-    text-overflow: scroll;
 }
 
 .overflow-height {
@@ -59,10 +58,6 @@ img {
     width: 100%;
     max-width: 500px;
     height: auto;
-}
-
-.text-wrap {
-    word-wrap: wrap;
 }
 
 .wrap {
