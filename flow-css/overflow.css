@@ -5,14 +5,14 @@
 }
 
 /*main classes*/
-
-.overflow-all {
-    overflow: scroll;
-}
-
 .overflow-height {
     height: 100%;
     overflow-y: scroll;
+}
+
+.overflow-height-auto {
+    height: 100%;
+    overflow: auto;
 }
 
 .overflow-hidden {
@@ -38,6 +38,13 @@
 }
 
 /*secondary classes*/
+.invisible-scrollbar { /*Firefox*/
+    scrollbar-width: none;
+}
+.invisible-scrollbar::-webkit-scrollbar { /*WebKit browsers*/
+    display: none;
+}
+
 img {
     display: block;
 }
@@ -46,7 +53,7 @@ img {
     margin: 0 !important;
 }
 .minmax {
-    grid-template-columns: minmax(1fr, 1fr);
+    grid-template-columns: minmax(auto, 1fr);
 }
 
 .minwidth {
