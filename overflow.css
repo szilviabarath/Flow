@@ -20,7 +20,7 @@
 }
 
 .overflow-scroll {
-    overflow: scroll;
+    overflow: scroll !important;
 }
 
 .overflow-x {
