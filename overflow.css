@@ -37,6 +37,10 @@
     overflow-x: scroll;
 }
 
+.overflow-wrap {
+overflow-wrap: break-word;
+}
+
 /*secondary classes*/
 .invisible-scrollbar { /*Firefox*/
     scrollbar-width: none;
